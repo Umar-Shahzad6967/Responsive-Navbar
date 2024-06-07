@@ -1,0 +1,84 @@
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.login-button {
+    background-color: #009970;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    margin-right: 20px;
+    margin-top: 10px;
+
+
+}
+
+.login-button:hover {
+    background-color: rgb(70, 151, 70);
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    position: relative;
+    font-weight: bold;
+}
+
+@media(min-width:789px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 2px;
+        background-color: green;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+#logo {
+    font-weight: 500;
+    color: #009970;
+    font-size: 30px;
+}
+
+.hero-section {
+    background: url("../../../public/free.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-section::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
